@@ -25,7 +25,8 @@
     "confidence": "3.x.x",
     "glue": "4.x.x",
     "hapi": "15.x.x",
-    "hoek": "4.x.x"
+    "hoek": "4.x.x",
+    "mongoose": "^4.7.4"
   },
   "devDependencies": {
     "code": "3.x.x",

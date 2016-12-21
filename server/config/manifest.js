@@ -2,15 +2,13 @@
 
 const Confidence = require('confidence');
 const Config = require('./config');
-
+const Db = require('./database');
 
 const criteria = {
     env: process.env.NODE_ENV
 };
 
-
 const manifest = {
-    $meta: 'This file defines the plot device.',
     server: {
         debug: {
             request: ['error']
@@ -22,27 +20,15 @@ const manifest = {
         }
     },
     connections: [{
-        port: Config.get('/port/api'),
-        labels: ['api']
-    }],
-    registrations: [
-        {
-            plugin: './server/api/route'
-        }
-    ]
+        port: Config.server.port
+    }]
 };
 
 
 const store = new Confidence.Store(manifest);
-
 
 exports.get = function (key) {
 
     return store.get(key, criteria);
 };
 
-
-exports.meta = function (key) {
-
-    return store.meta(key, criteria);
-};
