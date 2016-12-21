@@ -26,10 +26,15 @@
     "confidence": "3.x.x",
     "glue": "4.x.x",
     "hapi": "15.x.x",
+    "hapi-auth-jwt": "^4.0.0",
     "hoek": "4.x.x",
     "joi": "^10.0.6",
     "mongoose": "^4.7.4",
-    "multiparty": "^4.1.2"
+    "multiparty": "^4.1.2",
+    "jsonwebtoken": "^7.2.1",
+    "mongoose": "^4.7.4",
+    "mongoose-auto-increment": "^5.0.1",
+    "nodemailer": "^0.7.1"
   },
   "devDependencies": {
     "code": "3.x.x",
