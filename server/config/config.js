@@ -1,36 +1,15 @@
 'use strict';
 
-const Confidence = require('confidence');
-
-
-const criteria = {
-    env: process.env.NODE_ENV
-};
-
-
-const config = {
-    $meta: 'This file configures the plot device.',
-    projectName: 'hapi-fan-serve',
-    port: {
-        api: {
-            $filter: 'env',
-            test: 9090,
-            $default: 9000
-        }
+module.exports = {
+    server: {
+        host: '0.0.0.0',
+        port: 8000
+    },
+    database: {
+        host: '127.0.0.1',
+        port: 27017,
+        db: 'sample',
+        username: '',
+        password: ''
     }
-};
-
-
-const store = new Confidence.Store(config);
-
-
-exports.get = function (key) {
-
-    return store.get(key, criteria);
-};
-
-
-exports.meta = function (key) {
-
-    return store.meta(key, criteria);
 };
