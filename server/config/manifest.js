@@ -20,6 +20,7 @@ const manifest = {
         }
     },
     connections: [{
+        host: Config.server.host,
         port: Config.server.port
     }]
 };

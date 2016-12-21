@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports = {
-    server: {
-        host: '0.0.0.0',
+     server: {
+        host: '127.0.0.1',
         port: 8000
     },
     database: {
@@ -11,5 +11,15 @@ module.exports = {
         db: 'sample',
         username: '',
         password: ''
+    },
+    key: {
+        privateKey: '37LvDSm4XvjYOh9Y',
+        tokenExpiry: 1 * 30 * 1000 * 60 //1 hour
+    },
+    email: {
+        username: "mounica1331@gmail.com",
+        password: "ksnc1331",
+        accountName: "mounica1331",
+        verifyEmailUrl: "verifyEmail"
     }
 };
