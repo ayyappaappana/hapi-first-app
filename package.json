@@ -22,11 +22,14 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
+    "boom": "^4.2.0",
     "confidence": "3.x.x",
     "glue": "4.x.x",
     "hapi": "15.x.x",
     "hoek": "4.x.x",
-    "mongoose": "^4.7.4"
+    "joi": "^10.0.6",
+    "mongoose": "^4.7.4",
+    "multiparty": "^4.1.2"
   },
   "devDependencies": {
     "code": "3.x.x",

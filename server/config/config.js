@@ -11,5 +11,9 @@ module.exports = {
         db: 'sample',
         username: '',
         password: ''
-    }
+    },
+    publicFolder: './public',
+    uploadFolder: '/uploads',
+    MixFolder: './public/uploads',
+    MixInsideFolder: './public/uploads/'
 };
